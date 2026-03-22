@@ -7,9 +7,10 @@ use Luizlins\Projeto01\Dominio\Modulos\Medico;
 interface RepositorioMedicoInterface
 {
 
-    public function inserirMedico(Medico $medico);
-    public function deletarMedico(Medico $medico);
-    public function editarMedico(Medico $medico);
-    public function recuperarMedico(Medico $medico);
+    public function listar(): array;
+    public function inserir(Medico $medico): bool;
+    public function deletar(Medico $medico): bool;
+    public function atualizar(Medico $medico);
+    public function recuperar(Medico $medico);
 
 }

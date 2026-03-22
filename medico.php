@@ -5,7 +5,7 @@ $pdo = new PDO("sqlite:$caminhoBanco");
 
 $pdo->exec("
     CREATE TABLE medicos (
-        id PRIMARY KEY,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         crm TEXT,
         nome TEXT,
         especialidade TEXT

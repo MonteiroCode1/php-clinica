@@ -11,9 +11,14 @@ class Medico {
         private string $especialidade
     ) {}
 
-    public function recuperarId()
+    public function recuperarId(): null|int
     {
         return $this->id;
+    }
+
+    public function definirId(int $id)
+    {
+        $this->id = $id;
     }
 
     public function recuperarCRM()
